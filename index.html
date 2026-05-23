@@ -1,1 +1,116 @@
-Hola Mundo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>★ SUPERFUNK ★ — a wildly groovy test page</title>
+  <meta name="description" content="A maximally funky static page to test GitHub Pages. Turn the funk up." />
+
+  <!-- Funky fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Bungee&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪩</text></svg>" />
+</head>
+<body>
+  <!-- grain + custom cursor live here -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true">🪩</div>
+
+  <!-- floating groovy shapes -->
+  <div class="shapes" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="ring r1"></span>
+    <span class="star s1">✦</span>
+    <span class="star s2">✺</span>
+    <span class="star s3">❂</span>
+    <span class="squiggle"></span>
+  </div>
+
+  <!-- top marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>GET&nbsp;DOWN&nbsp;★&nbsp;GET&nbsp;FUNKY&nbsp;★&nbsp;STAY&nbsp;GROOVY&nbsp;★&nbsp;DEPLOYED&nbsp;ON&nbsp;GITHUB&nbsp;PAGES&nbsp;★&nbsp;</span>
+      <span>GET&nbsp;DOWN&nbsp;★&nbsp;GET&nbsp;FUNKY&nbsp;★&nbsp;STAY&nbsp;GROOVY&nbsp;★&nbsp;DEPLOYED&nbsp;ON&nbsp;GITHUB&nbsp;PAGES&nbsp;★&nbsp;</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero">
+      <p class="eyebrow">✦ now broadcasting on the internet ✦</p>
+      <h1 class="title">
+        <span class="title__line word-1">SUPER</span>
+        <span class="title__line word-2">FUNK</span>
+      </h1>
+      <p class="tagline">
+        a <em>wildly</em> over-decorated static page whose only job is to
+        prove that <span class="hl">github&nbsp;pages</span> works. mission: maximum groove.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn--primary" href="#funkbox">turn it up →</a>
+        <a class="btn btn--ghost" href="https://pages.github.com" target="_blank" rel="noopener">what's gh pages?</a>
+      </div>
+    </header>
+
+    <!-- FUNK DIAL -->
+    <section id="funkbox" class="funkbox">
+      <div class="funkbox__inner">
+        <h2 class="section-title">the funk level</h2>
+        <p class="section-sub">drag it. the whole page reacts. don't be shy.</p>
+
+        <div class="dial">
+          <output class="dial__readout" id="readout">50%</output>
+          <input id="funk" class="dial__slider" type="range" min="0" max="100" value="50" aria-label="Funk level" />
+          <div class="dial__labels">
+            <span>😴 nap time</span>
+            <span>🪩 MAXIMUM&nbsp;FUNK</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROOVE CARDS -->
+    <section class="cards">
+      <article class="card" style="--c:var(--pink)" tabindex="0">
+        <span class="card__emoji">🎷</span>
+        <h3>Zero build</h3>
+        <p>Pure HTML, CSS &amp; a sprinkle of JS. No bundler, no framework, no excuses.</p>
+      </article>
+      <article class="card" style="--c:var(--lime)" tabindex="0">
+        <span class="card__emoji">⚡</span>
+        <h3>Stupid fast</h3>
+        <p>Three little files. It loads before your turntable spins up.</p>
+      </article>
+      <article class="card" style="--c:var(--cyan)" tabindex="0">
+        <span class="card__emoji">🛰️</span>
+        <h3>Free hosting</h3>
+        <p>Push to a repo, flip on Pages, and you're live on the world wide web.</p>
+      </article>
+      <article class="card" style="--c:var(--orange)" tabindex="0">
+        <span class="card__emoji">🕺</span>
+        <h3>100% groove</h3>
+        <p>Click anywhere on the page. Go on. You won't regret it.</p>
+      </article>
+    </section>
+
+    <!-- BIG STATEMENT -->
+    <section class="statement">
+      <p class="statement__text" data-jiggle>
+        if you can <span>read</span> this, your <span>deploy</span> is <span>funky&nbsp;fresh</span>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>built to test <strong>github pages</strong> · <span id="year"></span></p>
+    <p class="foot__small">no animations were harmed in the making of this page · 🪩 click for chaos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
