@@ -114,15 +114,15 @@
     });
   }
 
-  /* --- konami-lite: type "funk" for instant max ----------- */
+  /* --- konami-lite: type "chicho" for instant max --------- */
   let typed = "";
   window.addEventListener("keydown", (e) => {
-    typed = (typed + e.key.toLowerCase()).slice(-4);
-    if (typed === "funk") {
+    typed = (typed + e.key.toLowerCase()).slice(-6);
+    if (typed === "chicho") {
       slider.value = 100;
       applyFunk(100);
     }
   });
 
-  console.log("%c🪩 SUPERFUNK loaded — type 'funk' or crank the dial to 100.", "font-size:14px;color:#c6ff1a;background:#14040f;padding:6px 10px;border-radius:6px;");
+  console.log("%c🪩 chicho loaded — type 'chicho' or crank the dial to 100.", "font-size:14px;color:#c6ff1a;background:#14040f;padding:6px 10px;border-radius:6px;");
 })();
